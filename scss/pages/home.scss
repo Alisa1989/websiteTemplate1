@@ -1,0 +1,48 @@
+@import "../abstracts/variables";
+
+.section-about {
+    background-color: $color-gray-light;
+    padding: 15rem 0;
+    margin-top: -20vh;
+    
+    @include respond(tab-port) {
+        padding: 10rem 0; 
+    }
+}
+
+.section-features {
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-yellow, $color-primary-red), url("../img/pinetaNonna.jpg");
+    background-size: cover;
+    background-position: top;
+    //transform: skewY(-7deg);
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+
+    margin-top: -15rem;
+
+    @include respond(tab-port) {
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+        padding: 15rem 0;
+      }
+
+    // & > * {
+    //     transform: skewY(7deg);
+    // }
+}
+
+.feature-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-resume {
+    margin-top: -30vh;
+    background-color: $color-gray-light;
+    padding-top: 30rem;
+    text-align: center;
+
+    .pdf-container {
+        height: 80vh;
+        width: 50vw;
+    }
+}

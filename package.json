@@ -1,0 +1,23 @@
+{
+  "name": "websitetemplate1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/index.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alisa1989/websiteTemplate1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alisa1989/websiteTemplate1/issues"
+  },
+  "homepage": "https://github.com/Alisa1989/websiteTemplate1#readme"
+}

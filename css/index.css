@@ -81,7 +81,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  color: rgba(255, 0, 0, 0.644);
+  color: rgba(34, 133, 25, 0.438);
   letter-spacing: .2rem;
   transition: all .2; }
   @media (max-width: 56.25em) {
@@ -115,7 +115,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(202, 166, 66, 0.63), rgba(255, 0, 0, 0.644)), url(../img/pinetaNonna.jpg);
+  background-image: linear-gradient(to right bottom, rgba(202, 166, 66, 0.63), rgba(34, 133, 25, 0.438)), url(../img/pinetaNonna.jpg);
   background-size: cover;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
@@ -229,7 +229,8 @@ body {
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 50rem; } }
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -303,15 +304,35 @@ Footer {
     z-index: 1;
     transition: all .2s;
     outline-offset: 2rem; }
+    @media (max-width: 56.25em) {
+      .composition__photo {
+        float: left;
+        position: relative;
+        width: 33.33333%;
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p1 {
+          top: 0;
+          transform: scale(1); } }
     .composition__photo--p2 {
       right: 0;
       top: 2rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p2 {
+          top: 0;
+          transform: scale(1.3);
+          z-index: 5; } }
     .composition__photo--p3 {
       left: 20%;
       top: 10rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p3 {
+          top: 0;
+          left: 0;
+          transform: scale(1.2); } }
     .composition__photo:hover {
       outline: 1.5rem solid #55c57a;
       transform: scale(1.05) translateY(-0.5rem);
@@ -335,13 +356,10 @@ Footer {
   background-color: #f7f7f7;
   padding: 15rem 0;
   margin-top: -20vh; }
-  @media (max-width: 56.25em) {
-    .section-about {
-      padding: 10rem 0; } }
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(202, 166, 66, 0.63), rgba(255, 0, 0, 0.644)), url("../img/pinetaNonna.jpg");
+  background-image: linear-gradient(to right bottom, rgba(202, 166, 66, 0.63), rgba(34, 133, 25, 0.438)), url("../img/pinetaNonna.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
@@ -349,7 +367,7 @@ Footer {
   @media (max-width: 56.25em) {
     .section-features {
       clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-      padding: 15rem 0; } }
+      padding: 10rem 0; } }
 
 .feature-link {
   text-decoration: none;
@@ -363,3 +381,9 @@ Footer {
   .section-resume .pdf-container {
     height: 80vh;
     width: 50vw; }
+    @media (max-width: 75em) {
+      .section-resume .pdf-container {
+        width: 90vw; } }
+    @media (max-width: 56.25em) {
+      .section-resume .pdf-container {
+        width: 100vw; } }
